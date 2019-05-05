@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Photorealistic style transfer
+read_time: false
 ---
 
 ## Introdución
