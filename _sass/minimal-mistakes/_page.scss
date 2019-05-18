@@ -28,7 +28,7 @@
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    padding-right: 170;
   }
 
   .page__inner-wrap {
@@ -75,7 +75,7 @@
   p,
   li,
   dl {
-    font-size: 0.9em;
+    font-size: 0.75em;
     font-family: "PT Serif";
   }
 
