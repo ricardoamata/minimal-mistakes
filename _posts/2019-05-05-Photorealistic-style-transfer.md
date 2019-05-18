@@ -5,7 +5,7 @@ read_time: false
 
 ---
 
-![Ciudad de Hermosillo](https://ricardoamata.github.io/images/ouput_1.png)
+![Ciudad de Hermosillo](https://ricardoamata.github.io/images/output_1.png)
 
 ## Introdución
 
