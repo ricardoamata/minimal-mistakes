@@ -2,9 +2,10 @@
 layout: single
 title: Photorealistic style transfer
 read_time: false
-header:
-    teaser: /assets/images/output_1.png
+
 ---
+
+![Ciudad de Hermosillo](assets/images/ouput_1.png)
 
 ## Introdución
 
