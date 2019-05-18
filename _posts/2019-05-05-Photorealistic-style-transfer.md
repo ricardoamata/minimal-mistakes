@@ -5,7 +5,7 @@ read_time: false
 
 ---
 
-![Ciudad de Hermosillo](ouput_1.png)
+![Ciudad de Hermosillo](../assets/images/ouput_1.png)
 
 ## Introdución
 
