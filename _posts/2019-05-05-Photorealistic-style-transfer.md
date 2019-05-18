@@ -2,6 +2,8 @@
 layout: single
 title: Photorealistic style transfer
 read_time: false
+header:
+    teaser: /assets/images/output_1.png
 ---
 
 ## Introdución
