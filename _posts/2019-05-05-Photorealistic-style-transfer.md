@@ -114,7 +114,7 @@ pintura o que no simplemente lusca editada con algun programa de edicion de foto
 ver en el ejemplo de abajo.
 
 | contenido | referencia | resultado |
-|:-----------------:|:------------:|:-----------:|
+|:--------------------:|:--------------------:|:--------------------:|
 | ![contenido](https://ricardoamata.github.io/images/in7.png) | ![referencia](https://ricardoamata.github.io/images/tar1.png) | ![resultado](https://ricardoamata.github.io/images/bad_styled.png)
 
 Principalmente se pueden encontrar dos problemas: uno es la distorcion de la imagen y el otro
