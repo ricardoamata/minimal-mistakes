@@ -115,7 +115,7 @@ ver en el ejemplo de abajo.
 
 | contenido | referencia | resultado |
 |:--------------------:|:--------------------:|:--------------------:|
-| ![contenido](https://ricardoamata.github.io/images/in7.png) | ![referencia](https://ricardoamata.github.io/images/tar1.png) | ![resultado](https://ricardoamata.github.io/images/bad_styled.png)
+| <a title="contenido" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/in7.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/tar1.png"><img src="https://ricardoamata.github.io/images/tar1.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/bad_styled.png"><img src="https://ricardoamata.github.io/images/bad_styled.png" alt="contenido"></a> |
 
 Principalmente se pueden encontrar dos problemas: uno es la distorcion de la imagen y el otro
 es la transferencia de estilo sin sentido. El primer problema es facil de entender, pero el segundo
