@@ -9,9 +9,14 @@ read_time: false
     <img src="https://ricardoamata.github.io/images/output_1.png" alt="Hermosillo, sonora">
 </a>
 
-# Nota importante: No se ha revisado la ortografía del post.
 
-## Introdución
+# *****
+# Nota importante: No se ha revisado la ortografía del post.
+# *****
+
+
+
+## Introducción
 
 En este blog se explicara en que consiste la transferencia de estilo y como conseguir
 que esta sea fotorealista, se mostrara de que manera se puede usar una red neuronal
@@ -98,18 +103,23 @@ imagenes en cada capa y obteninedo su distancia.
 
 El error total lo calculamos como el error de contenido mas el del estilo, despues usaremos
 este error con el metodo de backpropagation para actualizar la imagen inical. Para conocer los
-detalles matematicos detras de este metodo puedes revisar el (articulo original de Leon A. Gatys)[https://arxiv.org/abs/1508.06576]
+detalles matematicos detras de este metodo puedes revisar el [articulo original de Leon A. Gatys](https://arxiv.org/abs/1508.06576)
 
 ## Fotorealismo
 
 El metodo anterior es tiene buenos resultados para trasferir el estilo artistico, ya que si bien
 no se pierde el contenido original de la imagen al realizar el proceso si se trata de una fotografia
 se puede perder el realismo porque el metodo puede distorsionar la foto y hacer que paresca una 
-pintura o que no simplemente lusca editada con algun programa de edicion de fotos.
+pintura o que no simplemente lusca editada con algun programa de edicion de fotos como se puede
+ver en el ejemplo de abajo.
+
+| contenido | referencia | resultado |
+|:-----------------:|:------------:|:-----------:|
+| ![contenido](https://ricardoamata.github.io/images/in7.png) | ![referencia](https://ricardoamata.github.io/images/tar1.png) | ![resultado](https://ricardoamata.github.io/images/bad_styled.png)
 
 Principalmente se pueden encontrar dos problemas: uno es la distorcion de la imagen y el otro
 es la transferencia de estilo sin sentido. El primer problema es facil de entender, pero el segundo
 pede sonar un poco extraño, lo de la trasferencia de estilo sin sentido se refiere a que el estilo
 de una seccion de la imagen de referencia se transfiera a una region de la imagen de contenido que
-no deberia (ej. que el estilo de un edificio se transfiera al cilo). 
+no deberia (ej. que el estilo de un edificio se transfiera al cilo).
 
