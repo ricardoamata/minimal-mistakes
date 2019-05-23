@@ -169,12 +169,18 @@ ver un ejemplo con diferentes pesos para el estio con una misma imagen de conten
 y el peso del fotorealismo sin variar.
 
 | Contenido | Referencia |
-|:------------------------------:|:------------------------------:|
+|:--------------------------:|:------------------------------:|
 | <a title="Contetnido" href="https://ricardoamata.github.io/images/in_lcc.jpg"><img src="https://ricardoamata.github.io/images/in_lcc.jpg" alt="Contenido"></a> | <a title="Referencia" href="https://ricardoamata.github.io/images/style_pasillo.jpg"><img src="https://ricardoamata.github.io/images/style_pasillo.jpg" alt="Referencia"></a> |
 
 Resultados:
 
 | 100 | 500 |
 |:------------------------------:|:------------------------------:|
-| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o0.png"><img src="https://ricardoamata.github.io/images/pasillo_o0.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o1.png"><img src="https://ricardoamata.github.io/images/pasillo_o1.png" alt="Resultado"></a> |
+| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o1.png"><img src="https://ricardoamata.github.io/images/pasillo_o1.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o2.png"><img src="https://ricardoamata.github.io/images/pasillo_o2.png" alt="Resultado"></a> |
+| 1000 | 5000 |
+|:------------------------------:|:------------------------------:|
+| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o3.png"><img src="https://ricardoamata.github.io/images/pasillo_o3.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o4.png"><img src="https://ricardoamata.github.io/images/pasillo_o4.png" alt="Resultado"></a> |
 
+| 10000 |
+|:-------------------------------------------------------:|
+| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o5.png"><img src="https://ricardoamata.github.io/images/pasillo_o5.png" alt="Resultado"></a> |
