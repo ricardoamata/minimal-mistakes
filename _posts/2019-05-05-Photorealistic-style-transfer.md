@@ -113,7 +113,7 @@ se puede perder el realismo porque el metodo puede distorsionar la foto y hacer 
 pintura o que no simplemente lusca editada con algun programa de edicion de fotos como se puede
 ver en el ejemplo de abajo.
 
-| contenido | referencia | resultado |
+| Contenido | Referencia | Resultado |
 |:--------------------:|:--------------------:|:--------------------:|
 | <a title="contenido" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/in7.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/tar1.png" alt="referencia"><img src="https://ricardoamata.github.io/images/tar1.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/bad_styled.png"><img src="https://ricardoamata.github.io/images/bad_styled.png" alt="resultado"></a> |
 
@@ -128,7 +128,9 @@ fotorealista y solo hace falta agregar un termino extra a la funcion de error qu
 penaliza las distorciones en la imagen, para lo que usaremos una funcion que nos mida la affinidad
 de los colores de los pixeles de la imagen de salida en relacion a los de la imagen de entrada. Justo
 esto es lo que se consigue al acalcular la matriz de Matting Laplacian de una imagen que representa
-en una escala de grisces mate la combinacion local afín de los canales RGB de una imagen [R].
+en una escala de grisces mate la combinacion local afín de los canales RGB de una imagen [R],
+entonces podemos usar esta matriz para calcular que tan distorcionada queda la imagen de salida
+y a este termino le llamaremos factor de fotorrealismo.
 
 El calcular la matriz de Gram sobre toda la imagen de estilo y toda la imagen de salida para medir
 la diferencia que hay entre los estilos causa que no se realize una ransferencia tomando en cuenta
@@ -138,20 +140,41 @@ y asi limitar la transferencia de estilo solo con secciones que tengan que ver, 
 que si en la imagen de contenido hay un edificio, a este solo se le traspase el estilo de otro
 edificio en la imagen de referencia.
 
-| imagen | segmentación |
+| Imagen | Segmentación |
 |:------------------------------:|:------------------------------:|
-| <a title="NoImageYet" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="NoImageYet"></a> | <a title="NoImageYet" href="https://ricardoamata.github.io/images/tar1.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="contenido" alt="NoImageYet"></a> |
+| <a title="NoImageYet" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="NoImageYet"></a> | <a title="NoImageYet" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="contenido"></a> |
 
 ** Futura descripcion de las imagenes de arriba **
 
 Con esto ya tenemos un nuevo metodo de transferencia de estilo con el cual ya no sufiremos por
 deformaciones en la imagen de salida o que el estilo se transfiera sin tener en cuenta el contexto
-de la imagen. Si quieres conocer todos los detalles matematicos detras del metodo revisa el articulo [Deep photo style transfer](https://arxiv.org/abs/1703.07511) que esta mejora el metodo de Gatys.
+de la imagen. Si quieres conocer todos los detalles matematicos detras del metodo revisa el articulo [Deep photo style transfer](https://arxiv.org/abs/1703.07511).
 
 Ejemplo usando el metodo descrito para transferencia fotorealista con las imagenes antes mostradas:
 
 
-| contenido | referencia | resultado |
+| Contenido | Referencia | Resultado |
 |:--------------------:|:--------------------:|:--------------------:|
-| <a title="contenido" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/in7.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/tar1.png" alt="referencia"><img src="https://ricardoamata.github.io/images/tar1.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/bad_styled.png"><img src="https://ricardoamata.github.io/images/good_styled.png" alt="resultado"></a> |
+| <a title="contenido" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/in7.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/tar1.png" alt="referencia"><img src="https://ricardoamata.github.io/images/tar1.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/good_styled.png"><img src="https://ricardoamata.github.io/images/good_styled.png" alt="resultado"></a> |
+
+## El peso del fotorrealismo
+
+Nuestra funcion de error esta compuesta por tres terminos, los cuales son: la diferencia
+de contenido entre la imagen de salida y la de contenido, la diferencia del estilo entre la
+imagen de salida y la de referencia y el factor de fotorrealismo, si queremos que
+a la imagen de salida no le importen mucho las distorciones o que lo que sea mas importante sea
+el estilo, entonces podriamos multiplicar el factor de estilo por un numero para incrementarlo
+y que asi tenga mas peso en la funcion y sea mas relevante a la hora de minimizar. Abajo podemos
+ver un ejemplo con diferentes pesos para el estio con una misma imagen de contenido y referencia
+y el peso del fotorealismo sin variar.
+
+| Contenido | Referencia |
+|:------------------------------:|:------------------------------:|
+| <a title="Contetnido" href="https://ricardoamata.github.io/images/in_lcc.jpg"><img src="https://ricardoamata.github.io/images/in_lcc.jpg" alt="Contenido"></a> | <a title="Referencia" href="https://ricardoamata.github.io/images/style_pasillo.jpg"><img src="https://ricardoamata.github.io/images/style_pasillo.jpg" alt="Referencia"></a> |
+
+Resultados:
+
+| 100 | 500 |
+|:------------------------------:|:------------------------------:|
+| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o0.png"><img src="https://ricardoamata.github.io/images/pasillo_o0.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o1.png"><img src="https://ricardoamata.github.io/images/pasillo_o1.png" alt="Resultado"></a> |
 
