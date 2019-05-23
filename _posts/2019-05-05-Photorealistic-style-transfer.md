@@ -176,11 +176,11 @@ Resultados:
 
 | 100 | 500 |
 |:------------------------------:|:------------------------------:|
-| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o1.png"><img src="https://ricardoamata.github.io/images/pasillo_o1.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o2.png"><img src="https://ricardoamata.github.io/images/pasillo_o2.png" alt="Resultado"></a> |
+| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o0.png"><img src="https://ricardoamata.github.io/images/pasillo_o0.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o1.png"><img src="https://ricardoamata.github.io/images/pasillo_o1.png" alt="Resultado"></a> |
 | 1000 | 5000 |
 |:------------------------------:|:------------------------------:|
-| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o3.png"><img src="https://ricardoamata.github.io/images/pasillo_o3.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o4.png"><img src="https://ricardoamata.github.io/images/pasillo_o4.png" alt="Resultado"></a> |
+| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o2.png"><img src="https://ricardoamata.github.io/images/pasillo_o2.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o3.png"><img src="https://ricardoamata.github.io/images/pasillo_o3.png" alt="Resultado"></a> |
 
 | 10000 |
 |:-------------------------------------------------------:|
-| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o5.png"><img src="https://ricardoamata.github.io/images/pasillo_o5.png" alt="Resultado"></a> |
+| <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o4.png"><img src="https://ricardoamata.github.io/images/pasillo_o4.png" alt="Resultado"></a> |
