@@ -107,7 +107,7 @@ detalles matematicos detras de este metodo puedes revisar el [articulo original 
 
 ## Fotorealismo
 
-El metodo anterior es tiene buenos resultados para trasferir el estilo artistico, ya que si bien
+El metodo anterior tiene buenos resultados para trasferir el estilo artistico, ya que si bien
 no se pierde el contenido original de la imagen al realizar el proceso si se trata de una fotografia
 se puede perder el realismo porque el metodo puede distorsionar la foto y hacer que paresca una 
 pintura o que no simplemente lusca editada con algun programa de edicion de fotos como se puede
@@ -115,11 +115,43 @@ ver en el ejemplo de abajo.
 
 | contenido | referencia | resultado |
 |:--------------------:|:--------------------:|:--------------------:|
-| <a title="contenido" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/in7.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/tar1.png"><img src="https://ricardoamata.github.io/images/tar1.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/bad_styled.png"><img src="https://ricardoamata.github.io/images/bad_styled.png" alt="contenido"></a> |
+| <a title="contenido" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/in7.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/tar1.png" alt="referencia"><img src="https://ricardoamata.github.io/images/tar1.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/bad_styled.png"><img src="https://ricardoamata.github.io/images/bad_styled.png" alt="resultado"></a> |
 
 Principalmente se pueden encontrar dos problemas: uno es la distorcion de la imagen y el otro
 es la transferencia de estilo sin sentido. El primer problema es facil de entender, pero el segundo
 pede sonar un poco extraño, lo de la trasferencia de estilo sin sentido se refiere a que el estilo
 de una seccion de la imagen de referencia se transfiera a una region de la imagen de contenido que
-no deberia (ej. que el estilo de un edificio se transfiera al cilo).
+no deberia (ej. que el estilo de un edificio se transfiera al cielo).
+
+Para resolver el primer porblema partimos de la idea de que la imagen de entrada ya es una imagen
+fotorealista y solo hace falta agregar un termino extra a la funcion de error que
+penaliza las distorciones en la imagen, para lo que usaremos una funcion que nos mida la affinidad
+de los colores de los pixeles de la imagen de salida en relacion a los de la imagen de entrada. Justo
+esto es lo que se consigue al acalcular la matriz de Matting Laplacian de una imagen que representa
+en una escala de grisces mate la combinacion local afín de los canales RGB de una imagen [R].
+
+El calcular la matriz de Gram sobre toda la imagen de estilo y toda la imagen de salida para medir
+la diferencia que hay entre los estilos causa que no se realize una ransferencia tomando en cuenta
+el contexto de cada imagen. Para resolver este problema es necesario agregar una mascara de 
+segmentacion a las imagenes de estilo y contenido, en donde se divide la imagen por secciones
+y asi limitar la transferencia de estilo solo con secciones que tengan que ver, por ejemplo
+que si en la imagen de contenido hay un edificio, a este solo se le traspase el estilo de otro
+edificio en la imagen de referencia.
+
+| imagen | segmentación |
+|:------------------------------:|:------------------------------:|
+| <a title="NoImageYet" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="NoImageYet"></a> | <a title="NoImageYet" href="https://ricardoamata.github.io/images/tar1.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="contenido" alt="NoImageYet"></a> |
+
+** Futura descripcion de las imagenes de arriba **
+
+Con esto ya tenemos un nuevo metodo de transferencia de estilo con el cual ya no sufiremos por
+deformaciones en la imagen de salida o que el estilo se transfiera sin tener en cuenta el contexto
+de la imagen. Si quieres conocer todos los detalles matematicos detras del metodo revisa el articulo [Deep photo style transfer](https://arxiv.org/abs/1703.07511) que esta mejora el metodo de Gatys.
+
+Ejemplo usando el metodo descrito para transferencia fotorealista con las imagenes antes mostradas:
+
+
+| contenido | referencia | resultado |
+|:--------------------:|:--------------------:|:--------------------:|
+| <a title="contenido" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/in7.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/tar1.png" alt="referencia"><img src="https://ricardoamata.github.io/images/tar1.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/bad_styled.png"><img src="https://ricardoamata.github.io/images/good_styled.png" alt="resultado"></a> |
 
