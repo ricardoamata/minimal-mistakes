@@ -157,7 +157,7 @@ Ejemplo usando el metodo descrito para transferencia fotorealista con las imagen
 |:--------------------:|:--------------------:|:--------------------:|
 | <a title="contenido" href="https://ricardoamata.github.io/images/in7.png"><img src="https://ricardoamata.github.io/images/in7.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/tar1.png" alt="referencia"><img src="https://ricardoamata.github.io/images/tar1.png" alt="contenido"></a> | <a title="contenido" href="https://ricardoamata.github.io/images/good_styled.png"><img src="https://ricardoamata.github.io/images/good_styled.png" alt="resultado"></a> |
 
-## El peso del fotorrealismo
+## El peso del Estilo
 
 Nuestra funcion de error esta compuesta por tres terminos, los cuales son: la diferencia
 de contenido entre la imagen de salida y la de contenido, la diferencia del estilo entre la
@@ -177,10 +177,40 @@ Resultados:
 | 100 | 500 |
 |:------------------------------:|:------------------------------:|
 | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o0.png"><img src="https://ricardoamata.github.io/images/pasillo_o0.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o1.png"><img src="https://ricardoamata.github.io/images/pasillo_o1.png" alt="Resultado"></a> |
+                                                                          
 | 1000 | 5000 |
 |:------------------------------:|:------------------------------:|
 | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o2.png"><img src="https://ricardoamata.github.io/images/pasillo_o2.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o3.png"><img src="https://ricardoamata.github.io/images/pasillo_o3.png" alt="Resultado"></a> |
 
 | 10000 |
-|:-------------------------------------------------------:|
+|:------------------------------:|
 | <a title="Resultado" href="https://ricardoamata.github.io/images/pasillo_o4.png"><img src="https://ricardoamata.github.io/images/pasillo_o4.png" alt="Resultado"></a> |
+
+## El peso del fotorrealismo
+
+Si por el contrario queremos una imagen que sea mas realista podemos aumentar el peso por el que
+multiplicamos el factor fotorealista ejemplo:
+
+| 100 | 500 |
+|:------------------------------:|:------------------------------:|
+| <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> |
+                                                                          
+| 1000 | 5000 |
+|:------------------------------:|:------------------------------:|
+| <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> |
+
+| 10000 |
+|:------------------------------:|
+| <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> |
+
+## Como influye la segmentacion
+
+** pendiente **
+
+## Como mejorar el resultado
+
+** pendiente **
+
+## Concluciones
+
+** pendiente **
