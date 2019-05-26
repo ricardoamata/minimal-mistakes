@@ -191,17 +191,22 @@ Resultados:
 Si por el contrario queremos una imagen que sea mas realista podemos aumentar el peso por el que
 multiplicamos el factor fotorealista ejemplo:
 
-| 100 | 500 |
+| Contenido | Referencia |
+|:--------------------------:|:------------------------------:|
+| <a title="Contetnido" href="https://ricardoamata.github.io/images/in8.jpg"><img src="https://ricardoamata.github.io/images/in8.jpg" alt="Contenido"></a> | <a title="Referencia" href="https://ricardoamata.github.io/images/style8.png"><img src="https://ricardoamata.github.io/images/style8.png" alt="Referencia"></a> |
+                                                                
+| 100 | 1000 |
 |:------------------------------:|:------------------------------:|
-| <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> |
+| <a title="Resultado" href="https://ricardoamata.github.io/images/output_igls0.png"><img src="https://ricardoamata.github.io/images/output_igls0.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/output_igls1.png"><img src="https://ricardoamata.github.io/images/output_igls1.png" alt="Resultado"></a> |
                                                                           
-| 1000 | 5000 |
+| 10<sup>4</sup> | 10<sup>5</sup> |
 |:------------------------------:|:------------------------------:|
-| <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> |
+| <a title="Resultado" href="https://ricardoamata.github.io/images/output_igls2.png"><img src="https://ricardoamata.github.io/images/output_igls2.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/output_igls3.png"><img src="https://ricardoamata.github.io/images/output_igls3.png" alt="Resultado"></a> |
 
-| 10000 |
-|:------------------------------:|
-| <a title="Resultado" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="Resultado"></a> |
+                                                                           
+| 10<sup>6</sup> | 10<sup>7</sup> |
+|:------------------------------:|:------------------------------:|
+| <a title="Resultado" href="https://ricardoamata.github.io/images/output_igls4.png"><img src="https://ricardoamata.github.io/images/output_igls4.png" alt="Resultado"></a> | <a title="Resultado" href="https://ricardoamata.github.io/images/output_igls5.png"><img src="https://ricardoamata.github.io/images/output_igls5.png" alt="Resultado"></a> |
 
 ## Como influye la segmentacion
 
