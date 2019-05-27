@@ -138,7 +138,7 @@ edificio en la imagen de referencia.
 
 | Imagen | Segmentación |
 |:------------------------------:|:------------------------------:|
-| <a title="Imagen hermosillo" href="https://ricardoamata.github.io/images/in_h.jpg"><img src="https://ricardoamata.github.io/images/in_h.jpg" alt="Imagen hermosillo"></a> | <a title="Segmentación" href="https://ricardoamata.github.io/images/set_example.jpg"><img src="https://ricardoamata.github.io/images/set_example.jpg" alt="Segmentación"></a> |
+| <a title="Imagen hermosillo" href="https://ricardoamata.github.io/images/in_h.jpg"><img src="https://ricardoamata.github.io/images/in_h.jpg" alt="Imagen hermosillo"></a> | <a title="Segmentación" href="https://ricardoamata.github.io/images/seg_example.jpg"><img src="https://ricardoamata.github.io/images/seg_example.jpg" alt="Segmentación"></a> |
 
 Con esto ya tenemos un nuevo método de transferencia de estilo con el cual ya no sufriremos por
 deformaciones en la imagen de salida o que el estilo se transfiera sin tener en cuenta el contexto
