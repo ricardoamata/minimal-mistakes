@@ -124,7 +124,7 @@ fotorrealista y solo hace falta agregar un termino extra a la función de error 
 penaliza las distorsiones en la imagen, para lo que usaremos una función que nos mida la afinidad
 de los colores de los pixeles de la imagen de salida en relación a los de la imagen de entrada. Justo
 esto es lo que se consigue al calcular la matriz de Matting Laplacian de una imagen que representa
-en una escala de grises mate la combinación local afín de los canales RGB de una imagen [R],
+en una escala de grises mate la combinación local afín de los canales RGB de una imagen,
 entonces podemos usar esta matriz para calcular que tan distorsionada queda la imagen de salida
 y a este termino le llamaremos factor de fotorrealismo.
 
@@ -138,7 +138,7 @@ edificio en la imagen de referencia.
 
 | Imagen | Segmentación |
 |:------------------------------:|:------------------------------:|
-| <a title="NoImageYet" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="NoImageYet"></a> | <a title="NoImageYet" href="https://ricardoamata.github.io/images/NoImage.png"><img src="https://ricardoamata.github.io/images/NoImage.png" alt="contenido"></a> |
+| <a title="Imagen hermosillo" href="https://ricardoamata.github.io/images/in_h.jpg"><img src="https://ricardoamata.github.io/images/in_h.jpg" alt="Imagen hermosillo"></a> | <a title="Segmentación" href="https://ricardoamata.github.io/images/set_example.jpg"><img src="https://ricardoamata.github.io/images/set_example.jpg" alt="Segmentación"></a> |
 
 Con esto ya tenemos un nuevo método de transferencia de estilo con el cual ya no sufriremos por
 deformaciones en la imagen de salida o que el estilo se transfiera sin tener en cuenta el contexto
