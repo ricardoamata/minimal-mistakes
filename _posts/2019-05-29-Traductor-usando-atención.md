@@ -122,7 +122,7 @@ cada palabra que va a predecir el decoder, si lo graficamos nos daría algo como
 
 ## Implementación
 
-La implementación simplemente sigue el tutorial de tensorflow [nmt_with_attention](https://github.com/tensorflow/tensorflow/blob/r1.13/tensorflow/contrib/eager/python/examples/nmt_with_attention/nmt_with_attention.ipynb), el repositorio de gihub de nuestra implementación es [NMT-using-attention](https://github.com/ricardoamata/NMT_using_attention)
+La implementación simplemente sigue el tutorial de tensorflow [nmt_with_attention](https://github.com/tensorflow/tensorflow/blob/r1.13/tensorflow/contrib/eager/python/examples/nmt_with_attention/nmt_with_attention.ipynb), el repositorio de gihub de nuestra implementación es [NMT_using_attention](https://github.com/ricardoamata/NMT_using_attention)
 
 los datos se obtuvieron de [http://www.manythings.org/anki/](http://www.manythings.org/anki/), proporciona
 datos de frases en dos idiomas, cada línea tiene una frase en un idioma y luego la misma frase en otro
