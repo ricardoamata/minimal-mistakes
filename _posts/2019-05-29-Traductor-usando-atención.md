@@ -16,7 +16,7 @@ Las redes neuronales recurrentes se han usado en los últimos años para lograr 
 resultados en el área de traducción automática, es por eso que en este blog empezaremos
 dando una breve introducción sobre este tipo de redes.
 
-Las redes convolucionales son un tipo de red inspiradas en la capacidad de memoria que
+Las redes recurrentes son un tipo de red inspiradas en la capacidad de memoria que
 tienen las neuronas del cerebro, con la finalidad de ser efectivas a la hora de analizar
 datos que cambian con el tiempo. En estas redes las salidas de una capa no solo se conectan
 con la siguiente, sino que se vuelven a conectar a la misma capa, de ahí el nombre de 
